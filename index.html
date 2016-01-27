@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simon says ...</title>
+</head>
+<style type="text/css">
+    body {
+        font-family: arial;
+    }
+</style>
+<body>
+<div style="display: block; margin-left: auto; margin-right: auto;">
+    <!-- index.html, an optional user interface :] -->
+    <h1>Simon says ...</h1>
+
+    <p>
+        Description: Simon flashes the light in a specific color.
+        You have to remember the color and press the same colored button here.
+        <br>
+        Then Simon builds a sequence of colors and you have to remember and press the sequence ofcolors again!
+    </p>
+
+    <form action="/restart" method="POST">
+        <button name="restart" value="true">
+            Restart
+        </button>
+    </form>
+
+    <div style="display: block; position: absolute;">
+        <img src="bowling_design.png">
+
+        <form action="/" method="POST">
+            <button name="green" value="true" style="position: absolute; top: 0px; left: 0px; height: 50%; width: 50%; opacity: 0;"></button>
+            <button name="blue" value="true" style="position: absolute; top: 0px; right: 0px; height: 50%; width: 50%; opacity: 0;"></button>
+            <button name="red" value="true" style="position: absolute; bottom: 0px; left: 0px; height: 50%; width: 50%; opacity: 0;"></button>
+            <button name="yellow" value="true" style="position: absolute; bottom: 0px; right: 0px; height: 50%; width: 50%; opacity: 0;"></button>
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>
